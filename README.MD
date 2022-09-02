@@ -1,5 +1,5 @@
 # The library serves to generate decentralized unique ID with long number format or text ordered format
-The cogwheel ID generator makes about 250 000 unique values per second for one JVM instance.
+The cogwheel ID generator makes about 250 000 unique ordered values per second for one JVM instance.
 
 ## Getting started with simple application
 
