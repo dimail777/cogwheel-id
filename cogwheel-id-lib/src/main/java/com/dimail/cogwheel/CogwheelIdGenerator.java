@@ -12,7 +12,7 @@ public class CogwheelIdGenerator {
     private final long id;
     private final AtomicReference<LocalIncrement> atomic;
 
-    public static CogwheelIdGenerator replicaSetOf(long service) {
+    public static CogwheelIdGenerator statefulSetOf(long service) {
         var hostname = System.getenv("HOSTNAME");
         if (hostname == null || hostname.trim().equals("")) {
             throw new IllegalStateException("The HOSTNAME env var is not defined");

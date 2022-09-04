@@ -44,10 +44,10 @@ public class CogwheelIdGeneratorTest {
         return IntStream.range(0, 10000).mapToObj(i -> getIds(cogwheelIdGenerator));
     }
 
-    private static Arguments getIds(CogwheelIdGenerator snowflakeIdGenerator) {
+    private static Arguments getIds(CogwheelIdGenerator cogwheelIdGenerator) {
         return Arguments.arguments(
-                snowflakeIdGenerator.uniqueLong(),
-                snowflakeIdGenerator.uniqueLong()
+                cogwheelIdGenerator.uniqueLong(),
+                cogwheelIdGenerator.uniqueLong()
         );
     }
 
